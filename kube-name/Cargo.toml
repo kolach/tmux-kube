@@ -1,0 +1,12 @@
+[package]
+name = "kube-name"
+version = "0.1.0"
+authors = ["kolach <chikolad@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+clap = "2.32.0"
+serde = "1.0.87"
+serde_derive = "1.0.88"
+serde_yaml = "0.8.8"
+dirs = "1.0.4"
