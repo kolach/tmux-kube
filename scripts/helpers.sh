@@ -14,28 +14,3 @@ set_tmux_option() {
 	local value=$2
 	tmux set-option -gq "$option" "$value"
 }
-
-is_osx() {
-	[ $(uname) == "Darwin" ]
-}
-
-is_freebsd() {
-	[ $(uname) == "FreeBSD" ]
-}
-
-is_openbsd() {
-	[ $(uname) == "OpenBSD" ]
-}
-
-is_linux() {
-	[ $(uname) == "Linux" ]
-}
-
-is_cygwin() {
-	command -v WMIC &> /dev/null
-}
-
-command_exists() {
-	local command="$1"
-	command -v "$command" &> /dev/null
-}
