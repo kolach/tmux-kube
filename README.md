@@ -2,6 +2,8 @@
 
 Enables displaying k8s cluster name in Tmux status-right and status-left. Configurable icon display.
 
+![](./screenshots/screenshot.png)
+
 ## Installation
 
 ### Installation with [Tmux Plugin Manager](https://github.com/tmux-plugins/tpm) (recommended)
