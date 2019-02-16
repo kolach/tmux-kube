@@ -11,11 +11,11 @@ kube_default_icon="⎈"
 
 # icons are set as script global variables
 get_icon_settings() {
-	kube_icon=$(get_tmux_option "@kube_icon" "$kube_default_icon")
+  kube_icon=$(get_tmux_option "@kube_icon" "$kube_default_icon")
 }
 
 main() {
-	get_icon_settings 
+  get_icon_settings
   echo "$kube_icon"
 }
 main
