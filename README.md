@@ -43,8 +43,8 @@ Example:
 
 ### Supported Options
 
-This is done by introducing 8 new format strings that can be added to
-`status-right` option:
+This is done by introducing following format strings that can be added to
+`status-right` or `status-left` options:
 
  - `#{kube_icon}` - will display a k8s icon
  - `#{kube_config}` - path to kube config (default is $HOME/.kube/config)

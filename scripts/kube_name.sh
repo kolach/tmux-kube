@@ -2,6 +2,7 @@
 
 CURRENT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
+# shellcheck source=helpers.sh
 source "$CURRENT_DIR/helpers.sh"
 
 # script global variables
@@ -15,13 +16,13 @@ get_config() {
 }
 
 print_name() {
-  local current_context=$(cat "$kube_config" | grep current)
+  local current_context
+  current_context=$(grep current < "$kube_config")
   echo "${current_context##*_}"
 }
 
 main() {
   get_config
-  local kube_name=$(print_name)
-  echo "$kube_name"
+  print_name
 }
 main
